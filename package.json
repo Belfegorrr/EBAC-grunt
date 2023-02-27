@@ -1,0 +1,25 @@
+{
+  "name": "ebac-grunt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "grunt": "grunt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Belfegorrr/EBAC-grunt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Belfegorrr/EBAC-grunt/issues"
+  },
+  "homepage": "https://github.com/Belfegorrr/EBAC-grunt#readme",
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}
