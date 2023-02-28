@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "grunt": "grunt",
+    "less": "lessc src/styles/main.less build/styles/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +21,9 @@
   "devDependencies": {
     "grunt": "^1.6.1",
     "grunt-contrib-less": "^3.0.0",
-    "grunt-contrib-watch": "^1.1.0"
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "less": "^4.1.3",
+    "less-watch-compiler": "^1.16.3"
   }
 }
