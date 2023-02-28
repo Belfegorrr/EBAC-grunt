@@ -1,8 +1,14 @@
 body {
-  background-color: #dd2929;
-  color: black;
+  background-color: #9e1c1c;
+  color: #e7dada;
   font-size: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 h1 {
   font-weight: bold;
+}
+label {
+  font-size: 18px;
 }

@@ -21,7 +21,15 @@ module.exports = function (grunt) {
         files: ['./src/styles/**/*.less'],
         task: ['less:development']
       }
+    },
+    uglify: {
+      target: {
+        files: {
+          'dist/scripts/main.min.js' : 'src/scripts/main.js'
+        }
+      }
     }
+
   });
   grunt.registerTask("olaGrunt", function () {
     const done = this.async();
@@ -33,7 +41,8 @@ module.exports = function (grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-less')
   grunt.loadNpmTasks('grunt-contrib-watch')
+  grunt.loadNpmTasks('grunt-contrib-uglify')
 
   grunt.registerTask('default', ['watch']);
-  grunt.registerTask('build', ['less:production']);
+  grunt.registerTask('build', 'less:production', "uglify");
 };
